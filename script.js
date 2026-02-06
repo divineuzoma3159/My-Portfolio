@@ -61,4 +61,19 @@ function moverAll2(){
 }
 function moverAll3(){
         myContact.scrollIntoView({behavior:'smooth'});
+
 }
+const myWeather = document.querySelector('#myWeather');
+const myCalc = document.querySelector('#myCalc');
+myCalc.addEventListener("click",e => {
+    const confirmer = confirm("Are you sure you want to go to the Calculator?")
+    if(!confirmer){
+        e.preventDefault()
+    }
+});
+myWeather.addEventListener("click",e => {
+    const confirmer = confirm("Are you sure you want to go to the Weather App?")
+    if(!confirmer){
+        e.preventDefault()
+    }
+});
