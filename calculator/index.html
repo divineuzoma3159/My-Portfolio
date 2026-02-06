@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="calc.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="myCalcs" class="myCalc">
+        <div class="cover"></div>
+        <div style="width: 15rem;position:relative;right:0.7rem">
+            <input type="text" placeholder="0" readonly id="myInput">
+        </div>
+    <div>
+        <button onclick="clearAll()" style="color: orange;">C</button>
+        <button style="width:3.2rem; height: 3rem; padding:0.9rem;color: orange;" onclick="deleteOne()">⌫</button>
+        <button id="myBtn" style="color: orange;">%</button>
+        <button id="myBtn" style="color: orange;">/</button>
+    </div>
+        <div>
+        <button id="myBtn">7</button>
+        <button id="myBtn">8</button>
+        <button id="myBtn">9</button>
+        <button id="myBtn" style="color: orange;">*</button>
+    </div>
+        <div>
+        <button id="myBtn">4</button>
+        <button id="myBtn">5</button>
+        <button id="myBtn">6</button>
+        <button id="myBtn" style="color: orange;">-</button>
+    </div>
+        <div>
+        <button id="myBtn">1</button>
+        <button id="myBtn">2</button>
+        <button id="myBtn">3</button>
+        <button id="myBtn" style="color: orange;">+</button>
+    </div>
+        <div>
+        <button id="myBtn">0</button>
+        <button id="myBtn">.</button>
+        <button onclick="evaluation()" style="background-color: orange;">=</button>
+    </div>
+    <!--  -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+@media screen and (max-width: 768px) {
+    .cover{
+    position: absolute;
+    width: 10rem;
+    height: 20rem;
+    border: 1px solid white;
+    padding: 4rem;
+    border-radius: 1rem;
+    z-index: -1;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+/*  */
+.myCalc{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+    gap: 1rem;
+}
+.myCalc input{
+    width: 98%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.1rem;
+    outline: none;
+    font-size: 1.3em;
+}
+.myCalc button{
+    padding: 1rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.687);
+    color: white;
+    font-size: 1.2em;
+    margin-right: 0.3rem;
+    cursor: pointer;
+}
+.myCalc button:active{
+    opacity: 0.4;
+}
+
+}
+
+@media screen and (min-width:768px) {
+    .cover{
+    position: absolute;
+    width: 10rem;
+    height: 20rem;
+    border: 1px solid white;
+    padding: 4rem;
+    border-radius: 1rem;
+    z-index: -1;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+/*  */
+.myCalc{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    gap: 1rem;
+}
+.myCalc input{
+    width: 98%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.1rem;
+    outline: none;
+    font-size: 1.3em;
+}
+.myCalc button{
+    padding: 1rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.687);
+    color: white;
+    font-size: 1.2em;
+    margin-right: 0.3rem;
+    cursor: pointer;
+}
+.myCalc button:active{
+    opacity: 0.4;
+}
+
+}
