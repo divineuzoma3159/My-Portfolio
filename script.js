@@ -32,9 +32,9 @@ const myContact = document.getElementById('myContact');
 function moveInto3(){//To move into the contact section from the nav
     myContact.scrollIntoView({behavior:'smooth'});
 }
-function moverAll(){//To move into the contact section from the hero section
-  myContact.scrollIntoView({behavior:'smooth'});
-   myContact.style.animation = `flooring ${1}s ease-in-out`;
+function moverAll(){//To move into the projects section from the hero section
+  myProjects.scrollIntoView({behavior:'smooth'});
+   myProjects.style.animation = `flooring ${1}s ease-in-out`;
      //    const measuer = aboutMe.getBoundingClientRect();
      // if(measuer.top > 50){
      //    aboutMe.style.marginTop = `${10}rem`;
@@ -77,4 +77,5 @@ myWeather.addEventListener("click",e => {//To move to the Weather App page
         e.preventDefault()
     }
 });
+
 
