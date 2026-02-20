@@ -35,11 +35,11 @@ function moveInto3(){//To move into the contact section from the nav
 function moverAll(){//To move into the projects section from the hero section
   myProjects.scrollIntoView({behavior:'smooth'});
    myProjects.style.animation = `flooring ${1}s ease-in-out`;
-     //    const measuer = aboutMe.getBoundingClientRect();
-     // if(measuer.top > 50){
-     //    aboutMe.style.marginTop = `${10}rem`;
-     //    aboutMe.style.marginBottom = `${9}rem`;
-     // }
+        const measuer = aboutMe.getBoundingClientRect();
+     if(measuer.top > 50){
+        aboutMe.style.marginTop = `${10}rem`;
+        aboutMe.style.marginBottom = `${9}rem`;
+     }
 }
 function moverAll1(){//To move into the skills section from the about section
     mySkills.scrollIntoView({behavior:'smooth'});
@@ -77,5 +77,6 @@ myWeather.addEventListener("click",e => {//To move to the Weather App page
         e.preventDefault()
     }
 });
+
 
 
