@@ -99,6 +99,8 @@
     font-size: 1.2em;
     word-wrap: break-word;
     overflow-wrap: break-word;
+      line-height: 2rem;
+      margin-top: 0.5rem;
 }.it{
     display: flex;
     justify-content: center;
@@ -203,6 +205,12 @@
     margin: 0.5rem;
 }header h3{
     font-size: 1.02em;
+}.aboutMe{
+    gap: 0.01rem;
+}.aboutMe p{
+     font-size: 1.4em;
+     line-height: 2rem;
+     margin-top: 0.5rem;
 }.myAid{
     display: flex;
 }.cover{
@@ -213,6 +221,12 @@
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
+}.myAid2 h1{
+    margin: 0;
+}.myAid2 .divine{
+    margin-top: 3rem;
+}.myAid2 h2{
+    line-height: 2rem;
 }.mySkills .it2 button,.myProjects .it3 button,header button{
     font-size: 1em;
 }
@@ -226,4 +240,5 @@
         opacity: 1;
         transform: translateY(0);
     }
+
 }
