@@ -82,6 +82,9 @@
 }.cover img{
     width: 70%;
     border-radius: 5rem;
+}.myAid2 h2{
+    line-height: 2rem;
+    font-size: 1.3em;
 }.aboutMe{
     margin-top: 5rem;
     padding: 3rem 1rem;
@@ -242,3 +245,4 @@
     }
 
 }
+
