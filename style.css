@@ -185,7 +185,7 @@
     opacity: 0.8;
 }footer{
     background-color: var(--six);
-    padding: 0.5rem;
+    padding: 0.3rem;
 }footer p{
    font-size: 1.2em;
    word-wrap:break-word ;
@@ -230,6 +230,8 @@
     margin-top: 3rem;
 }.myAid2 h2{
     line-height: 2rem;
+}footer{
+    padding: 0.3rem;
 }.mySkills .it2 button,.myProjects .it3 button,header button{
     font-size: 1em;
 }
@@ -245,4 +247,5 @@
     }
 
 }
+
 
