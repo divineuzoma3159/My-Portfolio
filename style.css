@@ -210,6 +210,7 @@
     font-size: 1.02em;
 }.aboutMe{
     gap: 0.01rem;
+    margin-top: 9rem;
 }.aboutMe p{
      font-size: 1.4em;
      line-height: 2rem;
@@ -247,5 +248,6 @@
     }
 
 }
+
 
 
