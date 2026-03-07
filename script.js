@@ -65,6 +65,7 @@ function moverAll2(){//To move into the project section from the skill section
 // }
 const myWeather = document.querySelector('#myWeather');
 const myCalc = document.querySelector('#myCalc');
+const myLand = document.querySelector('#myLand');
 myCalc.addEventListener("click",e => {//To move to the calculator page
     const confirmer = confirm("Are you sure you want to go to the Calculator?")
     if(!confirmer){
@@ -77,6 +78,13 @@ myWeather.addEventListener("click",e => {//To move to the Weather App page
         e.preventDefault()
     }
 });
+myLand.addEventListener("click",e => {//To move to the Gym Landing page
+    const confirmer = confirm("Are you sure you want to go to the Gym Landing Page?")
+    if(!confirmer){
+        e.preventDefault()
+    }
+});
+
 
 
 
