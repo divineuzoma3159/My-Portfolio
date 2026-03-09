@@ -1,4 +1,4 @@
-:root{
+    :root{
     --first: #000000;
     --second: #1E1E1E;
     --third: #006312;
@@ -231,7 +231,7 @@
     justify-content: center;
     gap: 0.5rem;
     flex-wrap: wrap;
-}@media screen and (max-width:360px) {
+}@media screen and (max-width:480px) {
     #openUp{
         display: block;
         position: relative;
@@ -263,6 +263,8 @@
     width: 90%;
 }#myList.hide{
     display: flex;
+}.formHold textarea{
+    width: 90%;
 }
 }@media screen and (min-width:768px) {
     nav span img{
@@ -313,5 +315,6 @@
 }.show{
     opacity: 1;
     transform: translateY(0);
+
 
 }
