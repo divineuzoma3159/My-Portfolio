@@ -259,6 +259,8 @@
     width: 90%;
 }.firstCard, .secondCard,.thirdCard,.fourthCard,.fifthCard,.sixthCard{
     width: 70%;
+}.firstCard p, .secondCard p,.thirdCard p,.fourthCard p,.fifthCard p,.sixthCard p{
+    font-size: 1.2em;
 }.formHold input{
     width: 90%;
 }#myList.hide{
@@ -318,3 +320,4 @@
 
 
 }
+
