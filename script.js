@@ -59,30 +59,10 @@ function moverAll2(){//To move into the project section from the skill section
         myProjects.style.marginBottom = `${9}rem`;
      }
 }
-
-// function moverAll3(){
-//         myContact.scrollIntoView({behavior:'smooth'});
-// }
-const myWeather = document.querySelector('#myWeather');
-const myCalc = document.querySelector('#myCalc');
-const myLand = document.querySelector('#myLand');
-myCalc.addEventListener("click",e => {//To move to the calculator page
-    const confirmer = confirm("Are you sure you want to go to the Calculator?")
-    if(!confirmer){
-        e.preventDefault()
-    }
-});
-myWeather.addEventListener("click",e => {//To move to the Weather App page
-    const confirmer = confirm("Are you sure you want to go to the Weather App?")
-    if(!confirmer){
-        e.preventDefault()
-    }
-});
-myLand.addEventListener("click",e => {//To move to the Gym Landing page
-    const confirmer = confirm("Are you sure you want to go to the Gym Landing Page?")
-    if(!confirmer){
-        e.preventDefault()
-    }
+const openUp = document.querySelector('#openUp');
+const myList = document.querySelector('#myList');
+openUp.addEventListener('click',() => {
+    myList.classList.toggle('hide');
 });
 
 
