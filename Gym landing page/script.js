@@ -1,49 +1,20 @@
-const openUp = document.querySelector('#openUp');
-const myList = document.querySelector('#myList');
-openUp.addEventListener('click',() => {
-    myList.classList.toggle('hide');
-});
-const myTips = document.querySelector('#myTips');
-function moveIn1(){
-    myTips.scrollIntoView({behavior:'smooth'});
-    myTips.style.animation = `flooring ${1}s ease-in-out`;
-};
-const muscleGroup = document.querySelector('#muscleGroup');
-function moveIn2(){
-    muscleGroup.scrollIntoView({behavior:'smooth'});
-    muscleGroup.style.animation = `flooring ${1}s ease-in-out`;
-};
-const footer = document.querySelector('footer');
-function moveIn3(){
-    footer.scrollIntoView({behavior:'smooth'});
-    footer.style.animation =  `flooring ${1}s ease-in-out`;
-};
-const lastInit = document.querySelector('#lastInit');
-function joinNow(){
-    lastInit.scrollIntoView({behavior:'smooth'});
-    lastInit.style.animation =  `flooring ${1}s ease-in-out`;
-};
-const myForm = document.querySelector('form');
-myForm.addEventListener('submit',e => {
+// MENU BAR
+const ham = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+ham.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+// Scroll ANIMATION
+const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// ON FORM SUBMIT
+function handleSubmit(e) {
     e.preventDefault();
-})
-const myCancel = document.querySelector('#myCancel');
-const myName = document.querySelector('#myName');
-const myEmail = document.querySelector('#myEmail');
-const myWeight = document.querySelector('#myWeight');
-const myHeight = document.querySelector('#myHeight');
-myCancel.addEventListener('click', () => {
-    alert('your info has been recieved');
-    myForm.reset();
-});
-const scrolls = document.querySelectorAll('.scroll');
-function scrolling(){
-    scrolls.forEach(into => {
-        const inner = into.getBoundingClientRect();
-        if(inner.top < window.innerHeight - 100){
-            into.classList.add('show');
-        }
-    });
+    const toast = document.getElementById('toast');
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3500);
+    e.target.reset();
 }
-window.addEventListener("scroll",scrolling);
-scrolling();
